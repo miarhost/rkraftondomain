@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+root 'main#home'
+  get '/home', to: 'main#home'
+  get '/catalog', to: 'main#catalog'
+  get 'services', to: 'main#services'
+
+
+  
 end
