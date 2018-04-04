@@ -7,4 +7,11 @@ class MainController < ApplicationController
 
   def services
   end
+
+  def contacts
+  end
+
+  def gallery
+  end
+  
 end

@@ -43,7 +43,7 @@
           </form>
         </div>
       </div>
-      <div class="container"><a href="index.html" class="navbar-brand home"><img src="<%= asset_path 'logo.png' %>" alt="Minimal logo" class="d-none d-md-inline-block"><img src="img/logo-small.png" alt="Minimal logo" class="d-md-none"><span class="sr-only">Minimal - go to homepage</span></a>
+      <div class="container"><a href="<%= home_path %>" class="navbar-brand home"><img src="<%= asset_path 'logo.png' %>" alt="Rkraft logo" class="d-none d-md-inline-block"><img src="img/logo-small.png" alt="Rkraft logo" class="d-md-none"><span class="sr-only">Rkraftcomua - homepage</span></a>
         <div class="navbar-buttons d-lg-none">
           <button type="button" data-toggle="modal" data-target="#login-modal" class="btn btn-outline-secondary mr-1"><span class="sr-only">User login</span><i class="fa fa-users"></i></button>
           <button class="btn btn-outline-secondary search mr-1"><span class="sr-only">Toggle search</span><i class="fa fa-search">               </i></button> <a href="basket.html" class="btn btn-outline-primary mr-1"><i class="fa fa-shopping-cart"></i><span class="d-none d-sm-inline">0 items in cart                </span></a>
@@ -51,8 +51,8 @@
         </div>
         <div id="navigation" class="navbar-collapse collapse">
           <div class="navbar-nav mr-auto">
-            <div class="nav-item active dropdown normal-dropdown"><a id="homeDropdown" href="index.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Home</a>
-              <div aria-labelledby="homeDropdown" class="dropdown-menu"><a href="index.html" class="dropdown-item">Home - default</a><a href="index2.html" class="dropdown-item">Home - intro image</a><a href="index3.html" class="dropdown-item">Home - fullscreen slider <span class="badge badge-success">New</span></a></div>
+            <div class="nav-item active dropdown normal-dropdown"><a id="homeDropdown" href="<%= home_path %>" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Home</a>
+              <div aria-labelledby="homeDropdown" class="dropdown-menu"><a href="<%= home_path %>" class="dropdown-item">Home - default</a><a href="index2.html" class="dropdown-item">Home - intro image</a><a href="index3.html" class="dropdown-item">Home - fullscreen slider <span class="badge badge-success">New</span></a></div>
             </div>
             <div class="nav-item dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">Clamshells<b class="caret"></b></a>
               <div class="dropdown-menu">
@@ -141,9 +141,9 @@
                     <div class="col-sm-6 col-lg-3">
                       <h5>Homepage</h5>
                       <ul>
-                        <li><a href="index.html">Homepage - with slideshow</a></li>
-                        <li><a href="index2.html">Homepage - with intro image</a></li>
-                        <li><a href="index3.html">Homepage - fullscreen slider <span class="badge badge-success">New</span></a></li>
+                        <li><a href="<%= home_path %>">Homepage - with slideshow</a></li>
+                        <li><a href="#">Homepage - with intro image</a></li>
+                        <li><a href="#">Homepage - fullscreen slider <span class="badge badge-success">New</span></a></li>
                       </ul>
                       <h5>Shop</h5>
                       <ul>
@@ -191,7 +191,7 @@
                 <!-- /.yamm-content-->
               </div>
             </div>
-            <div class="nav-item"><a href="contact.html" class="nav-link">Contact</a></div>
+            <div class="nav-item"><a href="<%= contacts_path %>" class="nav-link">Contact</a></div>
           </div>
           <div class="d-none d-lg-block">
             <button type="button" data-toggle="modal" data-target="#login-modal" class="btn btn-outline-secondary mr-1"><span class="sr-only">User login</span><i class="fa fa-users"></i></button> 

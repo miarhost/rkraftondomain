@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+  	<p class="notice"><%= notice %></p>
     <title><%= full_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
 
@@ -14,6 +15,7 @@
   		<li><%= link_to 'Home', home_path %></li>
   		<li><%= link_to 'Catalog', catalog_path %> </li>
   		<li><%= link_to 'Services', services_path %></li>
+  		<li><%= link_to 'Contacts', contacts_path %></li>
   	</div>
   </header>
     <%= yield %>
