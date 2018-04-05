@@ -16,8 +16,32 @@
   		<li><%= link_to 'Catalog', catalog_path %> </li>
   		<li><%= link_to 'Services', services_path %></li>
   		<li><%= link_to 'Contacts', contacts_path %></li>
-  	</div>
+  	
+
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <% if !user_signed_in? %>
+        <li><%= link_to 'Sign Up', new_user_registration_path %></li>
+        <li><%= link_to 'Log in', new_user_session_path %></li>
+        <% else %>
+        <li><%= link_to 'Edit Profile', edit_user_registration_path %></li>
+        <li><%= link_to 'Logout', destroy_user_session_path %></li>
+        <% end %>
+      </ul>
+    </nav>
+    </div>
+
+
+  <% if flash[:success] %>
+    <div class="alert alert-success" role="alert">
+      <%= flash[:success] %>
+    </div>
+  <% end %>
+
   </header>
+
+  <div class="container">
     <%= yield %>
+  </div>
   </body>
 </html>
