@@ -3,6 +3,7 @@ class MainController < ApplicationController
   end
 
   def catalog
+    @products = Product.all
   end
 
   def services
