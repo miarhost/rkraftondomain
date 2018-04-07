@@ -24,6 +24,10 @@
       <%= link_to 'Edit Product', edit_product_path(product) %><br/>
       <%= link_to 'Delete Product', product, method: :delete, data: { confirm: 'Are you sure?'} %>
     </td>
+    <td class= "price_line">
+      <span class="price"><%= number_to_currency(product.price) %></span>
+    <%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+  </td>
   </tr>
   <% end %>
 </table>
