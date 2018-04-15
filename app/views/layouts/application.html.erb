@@ -30,13 +30,13 @@
         <div id="navigation" class="navbar-collapse collapse">
           <div class="navbar-nav mr-auto">
             <div class="nav-item active dropdown normal-dropdown"><a id="homeDropdown" href="<%= home_path %>" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Home</a>
-              <div aria-labelledby="homeDropdown" class="dropdown-menu"><a href="<%= home_path %>" class="dropdown-item">Home - default</a><a href="index2.html" class="dropdown-item">Home - intro image</a><a href="index3.html" class="dropdown-item">Home - fullscreen slider <span class="badge badge-success">New</span></a></div>
+              <div aria-labelledby="homeDropdown" class="dropdown-menu"><a href="<%= home_path %>" class="dropdown-item">Home - default</a><a href="<%= catalog_path %>" class="dropdown-item">Home - intro image</a><a img src="<%= asset_path 'title.png' %>" class="dropdown-item">Home - fullscreen slider <span class="badge badge-success">New</span></a></div>
             </div>
             <div class="nav-item dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">Clamshells<b class="caret"></b></a>
               <div class="dropdown-menu">
                 <div class="yamm-content">
                   <div class="row">
-                    <div class="col-lg-3 d-none d-lg-inline-block"><img src="img/men.jpg" alt="" class="img-fluid"></div>
+                    <div class="col-lg-3 d-none d-lg-inline-block"><img src="<%= asset_path 'disacr.jpg' %>" alt="" class="img-fluid"></div>
                     <div class="col-sm-4 col-lg-3">
                       <h3>Catalog</h3>
                       <ul>
@@ -76,7 +76,7 @@
               <div class="dropdown-menu">
                 <div class="yamm-content">
                   <div class="row">
-                    <div class="col-lg-3 d-none d-lg-inline-block"><img src="img/women.jpg" alt="" class="img-fluid"></div>
+                    <div class="col-lg-3 d-none d-lg-inline-block"><img src="<%= asset_path 'image857.jpg' %>" alt="" class="img-fluid"></div>
                     <div class="col-sm-4 col-lg-3">
                       <h3>Catalog</h3>
                       <ul>
@@ -125,30 +125,21 @@
                       </ul>
                       <h5>Shop</h5>
                       <ul>
-                        <li><a href="category.html">Category - sidebar right</a></li>
-                        <li><a href="category-left.html">Category - sidebar left</a></li>
-                        <li><a href="category-full.html">Category - full width</a></li>
-                        <li><a href="detail.html">Product detail</a></li>
+                        <li><a href="#">Category - sidebar right</a></li>
+                        <li><a href="#">Category - sidebar left</a></li>
+                        <li><a href="#">Category - full width</a></li>
+                        <li><a href="#">Product detail</a></li>
                       </ul>
                     </div>
-                    <div class="col-sm-6 col-lg-3">
-                      <h5>User</h5>
-                      <ul>
-                        <li><a href="register.html">Register / login</a></li>
-                        <li><a href="customer-orders.html">Orders history</a></li>
-                        <li><a href="customer-order.html">Order history detail</a></li>
-                        <li><a href="customer-wishlist.html">Wishlist</a></li>
-                        <li><a href="customer-account.html">Customer account / change password</a></li>
-                      </ul>
-                    </div>
+                 
                     <div class="col-sm-6 col-lg-3" id="cart">
                       <h5>Order process</h5>
                       <ul>
                         <li><a href="<%= cart_path(@cart) %>">Shopping cart</a></li>
-                        <li><a href="checkout1.html">Checkout - step 1</a></li>
-                        <li><a href="checkout2.html">Checkout - step 2</a></li>
-                        <li><a href="checkout3.html">Checkout - step 3</a></li>
-                        <li><a href="checkout4.html">Checkout - step 4</a></li>
+                        <li><a href="#">Checkout - step 1</a></li>
+                        <li><a href="#">Checkout - step 2</a></li>
+                        <li><a href="#">Checkout - step 3</a></li>
+                        <li><a href="#">Checkout - step 4</a></li>
                       </ul>
                     </div>
                     <div class="col-sm-6 col-lg-3">
@@ -158,7 +149,7 @@
                         <li><a href="post.html">Blog Post</a></li>
                         <li><a href="faq.html">FAQ</a></li>
                         <li><a href="about.html">About <span class="badge badge-success">New</span></a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="<%= contacts_path %>">Contact</a></li>
                         <li><a href="text.html">Text page</a></li>
                         <li><a href="text-left.html">Text page - left sidebar</a></li>
                         <li><a href="404.html">404 page</a></li>
