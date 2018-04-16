@@ -195,7 +195,11 @@
       </ul>
     </nav>
     </div>
-
+  <% if @cart %>
+  <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
+  <%= render @cart %>
+  <% end %>
+  <% end %>
 
   <% if flash[:success] %>
     <div class="alert alert-success" role="alert">

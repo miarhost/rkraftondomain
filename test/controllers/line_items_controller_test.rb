@@ -26,6 +26,18 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
    assert_select 'td', 'Launch-box'
   end
 
+  test "should create line_item via ajax" do
+    assert_difference('LineItem.count') do
+      post line_items_url, params: { product_id: products(:product).id }
+    xhr: true
+  end
+
+  assert_responce :success 
+   assert_select_jquery :html, '#cart' do
+    assert_select 'tr#current_item td', 'Lunch Box'
+  end
+end
+
   test "should show line_item" do
     get line_item_url(@line_item)
     assert_response :success
