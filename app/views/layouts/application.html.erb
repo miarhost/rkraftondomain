@@ -21,10 +21,10 @@
           </form>
         </div>
       </div>
-      <div class="container"><a href="<%= home_path %>" class="navbar-brand home"><img src="<%= asset_path 'logo.png' %>" alt="Rkraft logo" class="d-none d-md-inline-block"><img src="img/logo-small.png" alt="Rkraft logo" class="d-md-none"><span class="sr-only">Rkraftcomua - homepage</span></a>
+      <div class="container"><a href="<%= home_path %>" class="navbar-brand home"><img src="<%= asset_path 'logo.png' %>" alt="Rkraft logo" class="d-none d-md-inline-block"><img src="i<%= asset_path 'logo.png' %>" alt="Rkraft logo" class="d-md-none"><span class="sr-only">Rkraftcomua - homepage</span></a>
         <div class="navbar-buttons d-lg-none">
           <button type="button" data-toggle="modal" data-target="#login-modal" class="btn btn-outline-secondary mr-1"><span class="sr-only">User login</span><i class="fa fa-users"></i></button>
-          <button class="btn btn-outline-secondary search mr-1"><span class="sr-only">Toggle search</span><i class="fa fa-search">               </i></button> <a href="<%= cart_path(@cart) %>" class="btn btn-outline-primary mr-1"><i class="fa fa-cart"></i><span class="d-none d-sm-inline">0 items in cart                </span></a>
+          <button class="btn btn-outline-secondary search mr-1"><span class="sr-only">Toggle search</span><i class="fa fa-search">               </i></button> <a href="#" class="btn btn-outline-primary mr-1"><i class="fa fa-cart"></i><span class="cart"> 11 items in cart                </span></a>
           <button type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation" class="btn btn-outline-primary"><i class="fa fa-align-justify"></i><span class="sr-only">Toggle navigation</span></button>
         </div>
         <div id="navigation" class="navbar-collapse collapse">
@@ -135,7 +135,7 @@
                     <div class="col-sm-6 col-lg-3" id="cart">
                       <h5>Order process</h5>
                       <ul>
-                        <li><a href="<%= cart_path(@cart) %>">Shopping cart</a></li>
+                        <li><a href="#">Shopping cart</a></li>
                         <li><a href="#">Checkout - step 1</a></li>
                         <li><a href="#">Checkout - step 2</a></li>
                         <li><a href="#">Checkout - step 3</a></li>
@@ -164,7 +164,7 @@
           </div>
           <div class="d-none d-lg-block">
             <button type="button" data-toggle="modal" data-target="#login-modal" class="btn btn-outline-secondary mr-1"><span class="sr-only">User login</span><i class="fa fa-users"></i></button> 
-            <button class="btn btn-outline-secondary search mr-1"><span class="sr-only">Toggle search</span><i class="fa fa-search">  </i></button> <a href="<%= cart_path(@cart) %>" class="btn btn-outline-primary"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">0 items <span class="hidden-md">in cart   </span></span></a>
+            <button class="btn btn-outline-secondary search mr-1"><span class="sr-only">Toggle search</span><i class="fa fa-search">  </i></button> <a href="#" class="btn btn-outline-primary"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">0 items <span class="hidden-md">in cart   </span></span></a>
           </div>
         </div>
         <!-- /.nav-collapse-->
