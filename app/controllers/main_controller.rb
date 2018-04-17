@@ -16,6 +16,7 @@ class MainController < ApplicationController
   end
 
   def gallery
+    @images = Image.paginate(:page => params[:page], :per_page => 15)
   end
   
 end
