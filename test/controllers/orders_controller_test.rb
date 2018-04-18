@@ -17,17 +17,17 @@ class OrdersControllerTest < ActionDispatch::IntegrationTest
 
   test "should get new" do
     post_line_items_url, params: { product_id: products(:product).id }
-    
+
     get new_order_url
     assert_response :success
   end
 
   test "should create order" do
     assert_difference('Order.count') do
-      post orders_url, params: { order: {  pay_type: @order. pay_type, address: @order.address, email: @order.email, integer: @order.integer, name: @order.name } }
+      post orders_url, params: { order: {  pay_type: @order.pay_type, address: @order.address, email: @order.email, integer: @order.integer, name: @order.name } }
     end
 
-    assert_redirected_to order_url(Order.last)
+    assert_redirected_to products_url
   end
 
   test "should show order" do
