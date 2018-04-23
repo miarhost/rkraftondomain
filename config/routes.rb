@@ -11,5 +11,8 @@ root 'main#home'
   get '/contacts', to: 'main#contacts'
   get '/gallery', to: 'main#gallery'
 
+resources :products do
+   get :who_bought, on: :member
+end
   
 end
