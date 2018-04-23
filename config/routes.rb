@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :carts
   devise_for :users
   resources :products
+  resources :subscriptions
 root 'main#home'
   get '/home', to: 'main#home'
   get '/catalog', to: 'main#catalog'
