@@ -1,11 +1,6 @@
 Rails.application.routes.draw do
   devise_for :admins
-  get 'sessions/new'
-
-  get 'sessions/create'
-
-  get 'sessions/destroy'
-
+  get 'admins' => 'admins#index'
   resources :orders
   resources :line_items
   resources :carts
@@ -23,5 +18,11 @@ root 'main#home'
 resources :products do
    get :who_bought, on: :member
 end
+
+  get 'sessions/new'
+
+  get 'sessions/create'
+
+  get 'sessions/destroy'
   
 end
