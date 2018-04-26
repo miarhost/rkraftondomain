@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  devise_for :admins
+  get 'sessions/new'
+
+  get 'sessions/create'
+
+  get 'sessions/destroy'
+
   resources :orders
   resources :line_items
   resources :carts
