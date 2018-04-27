@@ -24,5 +24,9 @@ end
   get 'sessions/create'
 
   get 'sessions/destroy'
+
+  scope '(:locale)' do 
+    root 'main#home', as: 'main_home', via: :all
+  end 
   
 end
