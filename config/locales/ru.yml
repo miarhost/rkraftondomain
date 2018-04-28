@@ -29,16 +29,14 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
-  layouts: 
-    application:
-      title: "Rkraftcomua"
-      home: "Home"
-      catalog: "Catalog"
-      services: "Services"
-      contacts: "Contacts"
+ru:
+ layouts:
+  application: 
+     title: "Rkraftcomua"
+     home: "Главная"
+     catalog: "Каталог"
+     cervices: "Услуги"
+     contacts: "Контакты"
 
-  catalog:
-     index:
-      title_html: "Products"
+
     
