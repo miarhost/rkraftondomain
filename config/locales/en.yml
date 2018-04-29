@@ -38,7 +38,8 @@ en:
       services: "Services"
       contacts: "Contacts"
 
+en:
   catalog:
      index:
       title_html: "Products"
-    
+      add_html: "Add to Cart"

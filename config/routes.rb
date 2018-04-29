@@ -25,8 +25,13 @@ end
 
   get 'sessions/destroy'
 
- # scope '(:locale)' do 
-    #root 'main#home', as: 'main_home', via: :all
-  #end 
+ scope "/:locale" do 
+  resources :orders
+  resources :line_items
+  resources :carts
+  resources :products
+  resources :subscriptions
+    root 'main#home', as: 'main_home', via: :all
+  end 
   
 end

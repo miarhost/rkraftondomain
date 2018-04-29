@@ -37,6 +37,11 @@ ru:
      catalog: "Каталог"
      cervices: "Услуги"
      contacts: "Контакты"
+ ru:
+   catalog:
+     index:
+      title_html: "Продукция"
+      add_html: "В корзину"
 
 
     
