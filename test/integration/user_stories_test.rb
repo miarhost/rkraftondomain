@@ -2,7 +2,7 @@ require 'test_helper'
 
 class UserStoriesTest < ActionDispatch::IntegrationTest
  fixtures :products
- include ActiveJob::test_helper
+ include ActiveJob::TestHelper
 
  test "buying a product" do
  	start_order_count = Order.count
@@ -37,7 +37,7 @@ class UserStoriesTest < ActionDispatch::IntegrationTest
  	assert_responce :success
  	assert_select 'h1', "Products"
  	cart = Cart.find(session[:cart_id])
- 	assert_equal 0 cart.line_items.size
+ 	assert_equal 0, cart.line_items.size
 
  	assert_equal start_order_count +1, Order.count
  	order = Order.last
