@@ -443,15 +443,15 @@ button i.fa {
 }
 
 .bar.background-image-fixed-1 {
-  background: url("../img/fixed-background-1.jpg") center top no-repeat;
+  background: url(<%= asset_path 'title22.png', :size => "1200x400" %>)  center top no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 
 .bar.background-image-fixed-2 {
-  background: url("<%= asset_path 'clamshells.jpg' %>") center top no-repeat;
+  background: url(<%= asset_path 'clamshells.jpg', :size => "1200x400" %>) center top no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  
 }
 
 .bar.color-white h1,
