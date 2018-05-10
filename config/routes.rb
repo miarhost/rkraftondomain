@@ -19,6 +19,10 @@ resources :products do
    get :who_bought, on: :member
 end
 
+resources :inquiries #do
+  #get '/contacts', as: 'inquiries#index'
+#end
+
   get 'sessions/new'
 
   get 'sessions/create'
