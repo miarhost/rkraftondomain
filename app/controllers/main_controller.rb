@@ -14,7 +14,6 @@ class MainController < ApplicationController
 
   def contacts
     @inquiry = Inquiry.new
-    @inquiries = Inquiry.all
   end
 
   def gallery

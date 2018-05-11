@@ -1,12 +1,12 @@
 class InquiriesController < ApplicationController
 
-	skip_before_action :verify_authenticity_token
+	#skip_before_action :verify_authenticity_token
 
 def create
  @inquiry = Inquiry.new(inquiry_params) 
    if @inquiry.save
    	flash[:success] = "Your inquiry is sent"
-   	InquiryMailer.inquire(inquiry_params[:email]).deliver_now
+   	InquiryMailer.receive(inquiry_params[:email]).deliver_later
    	redirect_to home_path
    end
 end

@@ -74,10 +74,11 @@
                 <div class="col-sm-12">
                   <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" class="form-control"></textarea>
+                    <%= f.text_field :message, placeholder: "Write inquiring details here" %>
                   </div>
                 </div>
                 <div class="col-sm-12">
+                   <div class="form-group">
                   <%= f.button 'Submit', class: 'submit', type: 'submit' %>
                   <% end %>
                 </div>
