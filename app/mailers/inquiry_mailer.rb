@@ -5,7 +5,7 @@ class InquiryMailer < ApplicationMailer
  before_action { @inquiry_sender, @inquiry_getter = params[:inquiry_sender], params[:inquiry_getter] }
  before_action :set_inquiry_sender
 
-@inquiry_getter.email_address = "rghostme@gmail.com"
+
 
  def receive(email_address)
  	@email_address = email_address
