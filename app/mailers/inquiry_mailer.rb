@@ -5,8 +5,8 @@ class InquiryMailer < ApplicationMailer
 
  
 
- default to:      -> { @inquiry_getter.email_address }
-         from:    -> { common_address(@inquiry_sender) }
+ default to: @inquiry_getter.email_address 
+         from: common_address(@inquiry_sender)
 
 @inquiry_getter.email_address = "rghostme@gmail.com"
 
