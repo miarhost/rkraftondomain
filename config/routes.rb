@@ -15,6 +15,7 @@ root 'main#home'
   get '/gallery', to: 'main#gallery'
   get '/acryllic', to: 'main#acryllic'
   get '/clamshells', to: 'main#clamshells'
+  get '/racks', to: 'main#racks'
 resources :products do
    get :who_bought, on: :member
 end

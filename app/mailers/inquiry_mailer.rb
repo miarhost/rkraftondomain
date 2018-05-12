@@ -6,7 +6,6 @@ class InquiryMailer < ApplicationMailer
  before_action :set_inquiry_sender
 
 
-
  def receive(email_address)
  	@email_address = email_address
  	email_address = @inquiry_sender.email_address
@@ -20,7 +19,6 @@ private
 def set_inquiry_sender
 params.require(:email)
 end
-
 
 
 end
