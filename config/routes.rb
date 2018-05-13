@@ -16,6 +16,7 @@ root 'main#home'
   get '/acryllic', to: 'main#acryllic'
   get '/clamshells', to: 'main#clamshells'
   get '/racks', to: 'main#racks'
+  get '/mold', to: 'main#mold'
 resources :products do
    get :who_bought, on: :member
 end
