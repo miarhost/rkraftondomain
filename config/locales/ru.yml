@@ -30,18 +30,15 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 ru:
- layouts:
-  application: 
-     title: "Rkraftcomua"
-     home: "Главная"
-     catalog: "Каталог"
-     cervices: "Услуги"
-     contacts: "Контакты"
- ru:
-   catalog:
-     index:
-      title_html: "Продукция"
-      add_html: "В корзину"
+
+  layouts:
+    application: 
+      title: "Rkraftcomua"
+      home: "Главная"
+      catalog: "Каталог"
+      cervices: "Услуги"
+      contacts: "Контакты"
+
 
 
     

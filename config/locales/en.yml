@@ -30,6 +30,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+
   layouts: 
     application:
       title: "Rkraftcomua"
@@ -38,8 +39,3 @@ en:
       services: "Services"
       contacts: "Contacts"
 
-en:
-  catalog:
-     index:
-      title_html: "Products"
-      add_html: "Add to Cart"
