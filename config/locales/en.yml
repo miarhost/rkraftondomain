@@ -38,4 +38,15 @@ en:
       catalog: "Catalog"
       services: "Services"
       contacts: "Contacts"
+  
+  products:
+    title_html: "Products"
+    add_html: "Add to Cart"
 
+  carts:
+    cart:
+      title: "Your Cart"
+      empty: "Empty Cart"
+      checkout: "Checkout"
+
+    

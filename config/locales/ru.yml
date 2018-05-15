@@ -38,7 +38,14 @@ ru:
       catalog: "Каталог"
       cervices: "Услуги"
       contacts: "Контакты"
-
-
-
+  
+  products:
+    title_html: "Продукция"
+    add_html: "В корзину"
+  
+  carts:
+    cart:
+      title: "Ваша корзина"
+      empty: "Корзина пуста"
+      checkout: "Подтвердить"
     
