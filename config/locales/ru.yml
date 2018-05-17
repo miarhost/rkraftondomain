@@ -40,8 +40,9 @@ ru:
       contacts: "Контакты"
   
   products:
-    title_html: "Продукция"
-    add_html: "В корзину"
+    index:
+      title: "Продукция"
+      add: "В корзину"
   
   carts:
     cart:

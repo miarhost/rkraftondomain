@@ -40,8 +40,9 @@ en:
       contacts: "Contacts"
   
   products:
-    title_html: "Products"
-    add_html: "Add to Cart"
+    index:
+      title: "Products"
+      add: "Add to Cart"
 
   carts:
     cart:
