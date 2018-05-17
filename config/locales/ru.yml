@@ -42,7 +42,7 @@ ru:
   products:
     index:
       title: "Продукция"
-      add: "В корзину"
+      add_html: "В корзину"
   
   carts:
     cart:
@@ -50,3 +50,11 @@ ru:
       empty: "Корзина пуста"
       checkout: "Подтвердить"
     
+  number:
+    currency:
+      format:
+        unit: "UAH"
+        precision: 2
+        separator: "."
+        delimiter: ","
+        format: "%u%n"
