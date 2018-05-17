@@ -58,3 +58,24 @@ ru:
         separator: "."
         delimiter: ","
         format: "%u%n"
+
+  orders:
+    new:
+      legend: "Пожалуйста укажите контактные данные"
+    form:
+      name: "Имя"
+      address: "Адрес"
+      email: "Емейл"
+      pay_type: "Способ оплаты"
+      pay_prompt_html: "Выберите способ оплаты"
+      submit: "Разместить заказ"
+
+  activerecord:
+    models:
+      order: "Заказ"
+    attributes:
+      order: 
+        address: "Адрес" 
+        name: "Имя"  
+        email: "Емейл"
+        pay_type: "Способ оплаты"
