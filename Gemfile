@@ -41,6 +41,8 @@ gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
 gem 'mini_magick'
 gem 'carrierwave', '~> 0.11.2'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
+gem 'griddler', '~> 1.5', '>= 1.5.2'
+gem 'griddler-cloudmailin', '~> 1.1'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -51,6 +53,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'foreman'
 end
 
 group :development do

@@ -11,9 +11,7 @@ def create
    end
 end
 
-def show
- @inquiry = Inquiry.find[:id]
-end
+
 
 private
 

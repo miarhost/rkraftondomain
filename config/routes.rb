@@ -39,5 +39,7 @@ resources :inquiries #do
   resources :subscriptions
     root 'main#home', as: 'main_home', via: :all
   end 
+
+mount_griddler('/incoming_mails')
   
 end
