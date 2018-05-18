@@ -102,22 +102,7 @@ end
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
   
-Griddler.configure do |config|
-#config.processor_class = EmailProcessor
-config.email_class = Griddler::Email
-config.processor_method = :process
-config.reply_delimiter = '--REPLY ABOVE THIS LINE--'
-config.email_service = :cloudmailin
-      to: {
-  host: "imap.gmail.com",
-  port: 993,
-  domain: ENV["GMAIL_DOMAIN"],
-  enable_starttls_auto: true, 
-  user_name: ENV["GMAIL_USERNAME"],
-  password: ENV["GMAIL_PASSWORD"]
 
-}
-end
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
