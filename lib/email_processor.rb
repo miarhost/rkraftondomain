@@ -9,7 +9,7 @@ class EmailProcessor
   @inquiry = Inquiry.find_by_email(inquiry_params[:email])
    to:       { full: 'rghostme@gmail.com',
        email: 'rghostme@gmail.com',
-        token: 'to_smtp',
+        token: 'rghostme',
         host: 'gmail.com',
         name: nil }
   subject: @email.body 
