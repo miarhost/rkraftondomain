@@ -108,7 +108,7 @@ config.email_class = Griddler::Email
 config.processor_method = :process
 config.reply_delimiter = '--REPLY ABOVE THIS LINE--'
 config.email_service = :cloudmailin
-config.email = {
+      to: {
   host: "imap.gmail.com",
   port: 993,
   domain: ENV["GMAIL_DOMAIN"],
