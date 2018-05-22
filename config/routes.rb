@@ -17,6 +17,8 @@ root 'main#home'
   get '/clamshells', to: 'main#clamshells'
   get '/racks', to: 'main#racks'
   get '/mold', to: 'main#mold'
+  get '/moldshell', to: 'main#moldshell'
+  
 resources :products do
    get :who_bought, on: :member
 end
