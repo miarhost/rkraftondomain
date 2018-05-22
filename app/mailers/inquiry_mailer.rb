@@ -1,6 +1,6 @@
 class InquiryMailer < ApplicationMailer
 
-	 default to: "rghostme@gmail.com"
+	 
         
  before_action { @inquiry_sender, @inquiry_getter = params[:inquiry_sender], params[:inquiry_getter] }
  before_action :set_inquiry_sender
