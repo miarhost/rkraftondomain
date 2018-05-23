@@ -1,12 +1,15 @@
+require 'email_processor'
+
 class InquiriesController < ApplicationController
 
-	#skip_before_action :verify_authenticity_token
+	skip_before_action :verify_authenticity_token
 
 def create
  @inquiry = Inquiry.new(inquiry_params) 
    if @inquiry.save
    	flash[:success] = "Your inquiry is sent"
-   	InquiryMailer.receive(inquiry_params[:email]).deliver_later
+   	#InquiryMailer.receive(inquiry_params[:email]).deliver_later
+   	EmailProcessor.process(inquiry_params[:email])
    	redirect_to home_path
    end
 end
