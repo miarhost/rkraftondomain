@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :products
   resources :subscriptions
+  resources :inquiries
 root 'main#home'
   get '/home', to: 'main#home'
   get '/catalog', to: 'main#catalog'
@@ -23,7 +24,7 @@ resources :products do
    get :who_bought, on: :member
 end
 
-resources :inquiries #do
+ #do
   #get '/contacts', as: 'inquiries#index'
 #end
 
