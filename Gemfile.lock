@@ -680,12 +680,6 @@ GEM
     formatador (0.2.5)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
-    griddler (1.5.2)
-      htmlentities
-      rails (>= 3.2.0)
-    griddler-cloudmailin (1.1.0)
-      griddler
-    htmlentities (4.3.4)
     i18n (1.0.1)
       concurrent-ruby (~> 1.0)
     ipaddress (0.8.3)
@@ -827,8 +821,6 @@ DEPENDENCIES
   figaro (~> 1.1, >= 1.1.1)
   fog-aws (~> 2.0)
   foreman
-  griddler (~> 1.5, >= 1.5.2)
-  griddler-cloudmailin (~> 1.1)
   jbuilder (~> 2.5)
   jquery
   jquery-rails (~> 4.3.1)

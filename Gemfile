@@ -41,8 +41,6 @@ gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
 gem 'mini_magick'
 gem 'carrierwave', '~> 0.11.2'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
-gem 'griddler', '~> 1.5', '>= 1.5.2'
-gem 'griddler-cloudmailin', '~> 1.1'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

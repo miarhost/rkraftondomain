@@ -1,7 +1,11 @@
 class InquiriesController < ApplicationController
     
     #before_action :set_inquiry, only: [:create]
-	skip_before_action :verify_authenticity_token
+    #skip_before_action :verify_authenticity_token
+
+def index
+@inquiries = Inquiry.all
+end	
 
 def new
 @inquiry = Inquiry.new
@@ -19,10 +23,12 @@ end
 
 
 
+private
 
 #def set_inquiry 
 #@inquiry = Inquiry.find(params[:id])
 #end
+
 def inquiry_params
  params.require(:inquiry).permit(:email, :first_name, :second_name, :subject, :message)
 end
