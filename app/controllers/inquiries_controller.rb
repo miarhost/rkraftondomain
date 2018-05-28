@@ -1,5 +1,3 @@
-require 'email_processor'
-
 class InquiriesController < ApplicationController
     
     #before_action :set_inquiry, only: [:create]
@@ -13,9 +11,8 @@ def create
  @inquiry = Inquiry.new(inquiry_params) 
    if @inquiry.save
    	flash[:success] = "Your inquiry is sent"
-   	#InquiryMailer.receive(inquiry_params[:email]).deliver_later
-   	#EmailProcessor.process(inquiry_params[:email])
-   	redirect_to home_path
+   	InquiryMailer.reply(inquiry_params[:email]).deliver_later
+  	redirect_to home_path
    end
 end
 
