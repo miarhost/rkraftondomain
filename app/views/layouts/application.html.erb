@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,6 +8,12 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+  <%= stylesheet_link_tag 'carousel.css', media: 'print, screen' %>
+  <%= javascript_include_tag('jquery.js') %>
+   <%= javascript_include_tag('jquery.min.js') %>
+ <%= javascript_include_tag('bootstrap.min.js') %>
+ <%= javascript_include_tag('carousel.js') %>
 
      <!-- *** NAVBAR *** -->
     <nav id="navbar" role="navigation" class="navbar navbar-light fixed-top navbar-expand-lg yamm justify-content-between">
@@ -21,7 +28,7 @@
           </form>
         </div>
       </div>
-      <div class="container"><a href="<%= home_path %>" class="navbar-brand home"><img src="<%= asset_path 'logo.png' %>" alt="Rkraft logo" class="d-none d-md-inline-block"><img src="i<%= asset_path 'logo.png' %>" alt="Rkraft logo" class="d-md-none"><span class="sr-only">Rkraftcomua - homepage</span></a>
+      <div class="container"><a href="<%= home_path %>" class="navbar-brand home"><img src="<%= asset_path 'logo_rkraft.jpg' %>" alt="Rkraft logo" class="d-none d-md-inline-block"><span class="sr-only">Rkraftcomua - homepage</span></a>
         <div class="navbar-buttons d-lg-none">
           <button type="button" data-toggle="modal" data-target="#login-modal" class="btn btn-outline-secondary mr-1"><span class="sr-only">User login</span><i class="fa fa-users"></i></button>
           <button class="btn btn-outline-secondary search mr-1"><span class="sr-only">Toggle search</span><i class="fa fa-search">               </i></button> <a href="#" class="btn btn-outline-primary mr-1"><i class="fa fa-cart"></i><span class="cart"> 11 items in cart                </span></a>
