@@ -678,6 +678,7 @@ GEM
     foreman (0.84.0)
       thor (~> 0.19.1)
     formatador (0.2.5)
+    geocoder (1.4.9)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (1.0.1)
@@ -821,6 +822,7 @@ DEPENDENCIES
   figaro (~> 1.1, >= 1.1.1)
   fog-aws (~> 2.0)
   foreman
+  geocoder (~> 1.4, >= 1.4.9)
   jbuilder (~> 2.5)
   jquery
   jquery-rails (~> 4.3.1)

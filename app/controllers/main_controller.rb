@@ -1,5 +1,8 @@
 class MainController < ApplicationController
 
+  def self.google_map(center)
+    "https://maps.googleapis.com/maps/api/staticmap?center=#{center}&size=500x500&zoom=17"
+    end
 
   def home
     @subscription = Subscription.new
@@ -14,6 +17,7 @@ class MainController < ApplicationController
 
   def contacts
     @inquiry = Inquiry.new
+
   end
 
   def gallery
