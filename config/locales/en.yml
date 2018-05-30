@@ -38,6 +38,12 @@ en:
       catalog: "Catalog"
       services: "Services"
       contacts: "Contacts"
+      sign_up: "Sign Up"
+      log_in: "Log in"
+      clamshells: "Clamshells"
+      acryllic: "Acrylic Stands"
+      metal: "Metal Stands"
+      mold: "MOlded Stands"
   
   products:
     index:
@@ -69,5 +75,7 @@ en:
       pay_type: "Pay with"
       pay_prompt_html: "Select payment method"
       submit: "Place an order"
+
+
 
 

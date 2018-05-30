@@ -31,26 +31,25 @@
       <div class="container"><a href="<%= home_path %>" class="navbar-brand home"><img src="<%= asset_path 'logo_rkraft.jpg' %>" alt="Rkraft logo" class="d-none d-md-inline-block"><span class="sr-only">Rkraftcomua - homepage</span></a>
         <div class="navbar-buttons d-lg-none">
           <button type="button" data-toggle="modal" data-target="#login-modal" class="btn btn-outline-secondary mr-1"><span class="sr-only">User login</span><i class="fa fa-users"></i></button>
-          <button class="btn btn-outline-secondary search mr-1"><span class="sr-only">Toggle search</span><i class="fa fa-search">               </i></button> <a href="#" class="btn btn-outline-primary mr-1"><i class="fa fa-cart"></i><span class="cart"> 11 items in cart                </span></a>
-          <button type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation" class="btn btn-outline-primary"><i class="fa fa-align-justify"></i><span class="sr-only">Toggle navigation</span></button>
+        
         </div>
         <div id="navigation" class="navbar-collapse collapse">
           <div class="navbar-nav mr-auto">
             <div class="nav-item active dropdown normal-dropdown"><a id="homeDropdown" href="<%= home_path %>" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Home</a>
               <div aria-labelledby="homeDropdown" class="dropdown-menu"><a href="<%= home_path %>" class="dropdown-item">Home - default</a><a href="<%= catalog_path %>" class="dropdown-item">Home - intro image</a><a img src="<%= asset_path 'title.png' %>" class="dropdown-item">Home - fullscreen slider <span class="badge badge-success">New</span></a></div>
             </div>
-            <div class="nav-item dropdown yamm-fw"><a href="<%= 'clamshells' %>" data-toggle="dropdown" class="nav-link dropdown-toggle">Clamshells<b class="caret"></b></a>
+            <div class="nav-item dropdown yamm-fw"><a href="<%= 'clamshells' %>" data-toggle="dropdown" class="nav-link dropdown-toggle"><%= t('.clamshells') %><b class="caret"></b></a>
               <div class="dropdown-menu">
                 <div class="yamm-content">
                   <div class="row">
                     <div class="col-lg-3 d-none d-lg-inline-block"><img src="<%= asset_path 'disacr.jpg' %>" alt="" class="img-fluid"></div>
                     <div class="col-sm-4 col-lg-3">
-                      <h3>Catalog</h3>
+                      <h3><%= t('.catalog') %></h3>
                       <ul>
-                        <li><a href="<%= 'acryllic' %>">Acryllic Stands</a></li>
-                        <li><a href="<%= 'racks' %>">Metal Stands</a></li>
-                        <li><a href="<%= mold_path %>">Molded Displays</a></li>
-                        <li><a href="<%= clamshells_path %>">Clamshells</a></li>
+                        <li><a href="<%= 'acryllic' %>"><%= t('.acryllic') %></a></li>
+                        <li><a href="<%= 'racks' %>"><%= t('.metal') %></a></li>
+                        <li><a href="<%= mold_path %>"><%= t('.mold') %></a></li>
+                        <li><a href="<%= clamshells_path %>"><%= t('.clamshells') %></a></li>
                       </ul>
                     </div>
                     <div class="col-sm-4 col-lg-3">
@@ -180,21 +179,17 @@
   <body>
      <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
-      <li><%= link_to 'Home', home_path %></li>
-      <li><%= link_to 'Catalog', catalog_path %> </li>
-      <li><%= link_to 'Services', services_path %></li>
-      <li><%= link_to 'Contacts', contacts_path %></li>
+      <li><%= link_to t('.home'), home_path %></li>
+      <li><%= link_to t('.catalog'), catalog_path %> </li>
+      <li><%= link_to t('.services'), services_path %></li>
+      <li><%= link_to t('.contacts'), contacts_path %></li>
      
-     <ul>
-      <li><a href="https://#{host}/home"><%= t('.home') %></a></li>
-       <li><a href="https://#{host}/catalog"><%= t('.catalog') %></a></li>
-       <li><a href="https://#{host}/contacts"><%= t('.contacts') %></a></li>
-    </ul>
+
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <% if !user_signed_in? %>
-        <li><%= link_to 'Sign Up', new_user_registration_path %></li>
-        <li><%= link_to 'Log in', new_user_session_path %></li>
+        <li><%= link_to t('.sign_up'), new_user_registration_path %></li>
+        <li><%= link_to t('.log_in'), new_user_session_path %></li>
         <% else %>
         <li><%= link_to 'Edit Profile', edit_user_registration_path %></li>
         <li><%= link_to 'Logout', destroy_user_session_path, method: :delete, :class => 'navbar-link' %></li> 

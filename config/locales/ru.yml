@@ -36,8 +36,14 @@ ru:
       title: "Rkraftcomua"
       home: "Главная"
       catalog: "Каталог"
-      cervices: "Услуги"
+      services: "Услуги"
       contacts: "Контакты"
+      sign_up: "Войти"
+      log_in: "Зарегистрироваться"
+      clamshells: "Блистеры"
+      acryllic: "Акриловые дисплеи"
+      metal: "Металлические дисплеи"
+      mold: "Формованные дисплеи"
   
   products:
     index:
