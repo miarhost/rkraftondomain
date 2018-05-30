@@ -44,7 +44,20 @@ ru:
       acryllic: "Акриловые дисплеи"
       metal: "Металлические дисплеи"
       mold: "Формованные дисплеи"
-  
+      additional: "Дополнительно"
+      moldshell: "POS блистеры"
+      lighting: "Светящийся POS"
+      shelftalkers: "Шелфтокеры"
+      accessories: "Аксессуары"
+      services: "Услуги"
+      design: "Дизайн"
+      constructing: "Конструирование"
+      3dmodelling: "3D Моделирование"
+      consulting: "Консалтинг"
+      where: "Где нас найти"
+      gocontacts: "Смотреть контакты, карту, оставить запрос"
+      gallery: "Галерея"
+
   products:
     index:
       title: "Продукция"

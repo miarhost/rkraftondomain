@@ -43,7 +43,20 @@ en:
       clamshells: "Clamshells"
       acryllic: "Acrylic Stands"
       metal: "Metal Stands"
-      mold: "MOlded Stands"
+      mold: "Molded Stands"
+      additional: "Additional"
+      moldshell: "POS clamshells"
+      lighting: "Blinks and Lighting"
+      shelftalkers: "Shelftalers"
+      accessories: "Accessories"
+      services: "Serviсes"
+      design: "Design"
+      constructing: "Constructing"
+      3dmodelling: "3D Modelling"
+      consulting: "Consulting"
+      where: "Where to find us"
+      gocontacts: "See contacts, map, leave an inquiry"
+      gallery: "Gallery"
   
   products:
     index:
