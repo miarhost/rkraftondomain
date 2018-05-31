@@ -111,33 +111,31 @@ $(document).ready(function(){
           <!-- *** ADVANTAGES ***-->
           <div id="advantages">
             <div class="box text-center">
-              <h3 class="text-uppercase">About Us</h3>
-              <p>We make promotional products and plastic packaging for a long time.
-Our equipment and experience allow to propose you promotional products and packaging that will store, display and sell your goods the best way.
-We always proudly note as sells of our customers grow. </p>
+              <h3 class="text-uppercase"><%= t('.aboutus') %></h3>
+              <p><%= t('.p_about') %></p>
               <div class="same-height-row row">
                 <div class="col-md-3 col-6 justify-content-md-center align-items-md-center">
                   <div class="box no-border d-flex justify-content-center align-items-center">
                     <div class="icon"><i class="fa fa-heart-o"></i></div>
-                    <h4><a href="text.html">Satisfied customers</a></h4>
+                    <h4><a href="<%= services_path %>"><%= t('.toc1') %></a></h4>
                   </div>
                 </div>
                 <div class="col-md-3 col-6">
                   <div class="box no-border d-flex justify-content-center align-items-center">
                     <div class="icon"><i class="fa fa-tags"></i></div>
-                    <h4><a href="text.html">Best prices</a></h4>
+                    <h4><a href="<%= catalog_path %>"><%= t('.toc2') %></a></h4>
                   </div>
                 </div>
                 <div class="col-md-3 col-6">
                   <div class="box no-border d-flex justify-content-center align-items-center">
                     <div class="icon"><i class="fa fa-send-o"></i></div>
-                    <h4><a href="faq.html">Next day delivery</a></h4>
+                    <h4><a href="<%= services_path %>"><%= t('.toc3') %></a></h4>
                   </div>
                 </div>
                 <div class="col-md-3 col-6">
                   <div class="box no-border d-flex justify-content-center align-items-center">
                     <div class="icon"><i class="fa fa-refresh"></i></div>
-                    <h4><a href="contact.html">Free returns for 3 months</a></h4>
+                    <h4><a href="<%= contacts_path %>"><%= t('.toc4') %></a></h4>
                   </div>
                 </div>
               </div>
@@ -146,18 +144,18 @@ We always proudly note as sells of our customers grow. </p>
           <!-- /#advantages-->
           <!-- *** ADVANTAGES END ***-->
           <div class="box text-center">
-            <h3 class="text-uppercase">View the Gallery</h3>
-            <h4 class="text-muted"><span class="accent">Find your solution</span> for design</h4>
+            <h3 class="text-uppercase"><%= t('.2_gallery') %></h3>
+            <h4 class="text-muted"><span class="accent"><%= t('.2_gallery_p') %></h4>
           </div>
           <div class="row products">
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= gallery_path %>"><img src="<%= asset_path 'title.png' %>" alt="Rkraft" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="#">Plastic packaging: lunchboxes</a></h3>
+                  <h3><a href="#"><%= t('.popup') %></a></h3>
                   <p class="price">$ 0.44</p>
                 </div>
                 <!-- /.text-->
@@ -167,12 +165,12 @@ We always proudly note as sells of our customers grow. </p>
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'shelftalkers.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('.qview') %></a></div>
                 </div>
 
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html">Shelftalker</a></h3>
+                  <h3><a href="detail.html"><%= t('.shelf') %></a></h3>
                   <p class="price">
                     <del>$2.4</del> $2.12
                   </p>
@@ -194,11 +192,11 @@ We always proudly note as sells of our customers grow. </p>
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'box1.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html">Lunch Box</a></h3>
+                  <h3><a href="detail.html"><%= t('.lunch') %></a></h3>
                   <p class="price">$0.52</p>
                 </div>
                 <!-- /.text-->
@@ -208,11 +206,11 @@ We always proudly note as sells of our customers grow. </p>
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'blp.png' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html">Clamshell</a></h3>
+                  <h3><a href="detail.html"><%= t('.clam') %></a></h3>
                   <p class="price">$0.1</p>
                 </div>
                 <!-- /.text-->
@@ -222,11 +220,11 @@ We always proudly note as sells of our customers grow. </p>
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'shelforg.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="#">Molded dispenser</a></h3>
+                  <h3><a href="#"><%= t('.mold') %></a></h3>
                   <p class="price">
                     <del>$6.5</del> $6.05
                   </p>
@@ -248,11 +246,11 @@ We always proudly note as sells of our customers grow. </p>
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'suchiboxx.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="#">Suchi-box</a></h3>
+                  <h3><a href="#"><%= t('.suchi') %></a></h3>
                   <p class="price">$0.44</p>
                 </div>
                 <!-- /.text-->
@@ -267,11 +265,11 @@ We always proudly note as sells of our customers grow. </p>
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'disacr.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="<%= products_path %>">Acryllic Display</a></h3>
+                  <h3><a href="<%= products_path %>"><%= t('.display') %></a></h3>
                   <p class="price">$143.00</p>
                 </div>
                 <!-- /.text-->
@@ -286,11 +284,11 @@ We always proudly note as sells of our customers grow. </p>
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'cosmetics.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html">Acryllic Stand</a></h3>
+                  <h3><a href="detail.html"><%= t('.stand') %></a></h3>
                   <p class="price">$5.2</p>
                 </div>
                 <!-- /.text-->

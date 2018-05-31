@@ -89,6 +89,32 @@ en:
       pay_prompt_html: "Select payment method"
       submit: "Place an order"
 
+  main:
+    home:
+      aboutus: "About Us"
+      p_about: "We make promotional products and plastic packaging for a long time.
+                 Our equipment and experience allow to propose you promotional products and packaging that will store, display and sell your goods the best way.
+                 We always proudly note as sells of our customers grow."
+      2_gallery: "View the Gallery"
+      2_gallery_p: "Find your solution for design"
+      toc1: "Customer support"
+      toc2: "Best prices"
+      toc3: "Delivery"
+      toc4: "Preproduction sampling"
+      popup: "Plastic packaging: lunchboxes"
+      qview: "Quick view"
+      shelf: "Shelftalker"
+      lunch: "Lunch Box"
+      clam: "Clamshell"
+      mold: "Molded dispenser"
+      suchi: "Suchi-box"
+      stand: "Acryllic Stand"
+      display: "Acryllic Display"
+    
+    services:
+      s_title: "Services" 
+      p_text: "We supply our customers with graphic design including preprinting works, 3d rendering, constructional 3d modelling with drawings (SolidWorks), molding tool modelling, product samples on demand ( depending on a product). "
+
 
 
 
