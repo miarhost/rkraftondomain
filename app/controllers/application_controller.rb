@@ -1,21 +1,18 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_action :configure_sanitized_parameters, if: :devise_controller?
-  before_action :set_i18n_locale_from_params
-
+  before_action :set_i18n_locale
 
 protected 
 
-def set_i18n_locale_from_params
-	if params[:locale]
-		if I18n.available_locales.map(&:to_s).include?(params[:locale])
-			I18n.locale = params[:locale]
-		else
-		 flash[:notice] = "#{params[:locale]} translation not available"
-		 logger.error flash.now[:notice]
-		end
-	 end
-end
+def set_i18n_locale
+ I18n.locale = params[:locale] || I18n.default_locale
+  end
+
+ def default_url_options(options = {})
+    { locale: I18n.locale }
+ end
+
 
 
 def configure_sanitized_parameters
