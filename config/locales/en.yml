@@ -110,7 +110,13 @@ en:
       suchi: "Suchi-box"
       stand: "Acryllic Stand"
       display: "Acryllic Display"
-    
+      seemore: "Do you want to see more?"
+      2_gallery_s: "See latest gallery "
+      chocolate: "Molded stand for chocolate , for 2 types , with sticker , silk-screen printing"
+      blog: "From our blog "
+      socialm: " Find us on social media "
+      socialc: "Check our blog!"
+
     services:
       s_title: "Services" 
       p_text: "We supply our customers with graphic design including preprinting works, 3d rendering, constructional 3d modelling with drawings (SolidWorks), molding tool modelling, product samples on demand ( depending on a product). "
