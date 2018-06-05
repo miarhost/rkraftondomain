@@ -91,6 +91,9 @@ en:
 
   main:
     home:
+      carousel1: "Lunch-boxes"
+      carousel2: "Suchi-boxes"
+      carousel3: "Molded trays"
       aboutus: "About Us"
       p_about: "We make promotional products and plastic packaging for a long time.
                  Our equipment and experience allow to propose you promotional products and packaging that will store, display and sell your goods the best way.
@@ -115,7 +118,20 @@ en:
       chocolate: "Molded stand for chocolate , for 2 types , with sticker , silk-screen printing"
       blog: "From our blog "
       socialm: " Find us on social media "
-      socialc: "Check our blog!"
+      socialc: " Check our blog!"
+      trade: "Trade equipment products"
+      tradeblog: "We produce custom prodmotional and trade equipment for shops and brand promotion for about 12 years. We combine plastic production technologies and different branding technics to meet your needs."
+      package: "Custom plastic packaging production"
+      package_p: "We have rich experience in plastic packaging production for foods, candies, retail, householding goods, hardware, fasteners of PET, PVC, PP, HIPS , with thickness of material from 0,2 to 2 mm. We have facilities and knowledge to support and provide quality for customized plastic packaging. We made customized plastic packaging of all types, starting with 3d-model prototyping, picking material, building molding tools and then molding products. "
+      read: "Continue reading"
+      pages: "Pages"
+      addresses: "Adresses"
+      contactus: "Contact us"
+      user_section: "User section"
+      catalog: "Catalog  "
+      subscription: "Get the news"
+      subsmail: "Type your email address"
+      subscribe: "Subscribe"
 
     services:
       s_title: "Services" 
