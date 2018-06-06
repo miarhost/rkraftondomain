@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+
   devise_for :admins
   get 'admins' => 'admins#index'
   resources :orders
@@ -34,13 +36,14 @@ end
 
   get 'sessions/destroy'
 
- scope "/:locale" do 
+  scope "/:locale" do 
+  resources :users
   resources :orders
   resources :line_items
   resources :carts
   resources :products
   resources :subscriptions
-    root 'main#home', as: 'main_home', via: :all
+  root 'main#home', as: 'main_home', via: :all
   end 
 
  
