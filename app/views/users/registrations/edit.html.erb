@@ -3,6 +3,16 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
 
+  <% if @user.image? %>
+  <%= image_tag(@user.image.url, alt: 'image') %>
+  <% else %>
+  <div class="gravatar">
+    <div class="img-img-responsive">
+    <%= gravatar_for(@user,40) %>
+    </div>
+  </div>
+  <% end %>
+    
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
@@ -29,6 +39,12 @@
   <div class="field">
     <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
     <%= f.password_field :current_password, autocomplete: "off" %>
+  </div>
+
+    <div>
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+    <%= f.hidden_field :image_cache %>
   </div>
 
   <div class="actions">

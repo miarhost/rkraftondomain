@@ -32,7 +32,7 @@ elsif Rails.env.production?
   end
 
   version :large do
-  process :recise_to_limit => [500,500]
+  process :resize_to_limit => [500,500]
   end
 
   def extension_white_list
