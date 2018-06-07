@@ -1,27 +1,28 @@
-<div class="center jumbotron">
-<h1>Rkraftcomua</h1>
 
+<div class="center jumbotron">
+  
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="robots" content="all,follow">
-    <meta name="googlebot" content="index,follow,snippet,archive">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rkraftcomua | plastics and molding</title>
-    <meta name="keywords" content="">
-    <!-- Bootstrap CSS-->
-   
-    <!-- Google fonts - Montserrat and Merriweather-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Merriweather:400,400italic" rel="stylesheet" type="text/css">
 
 
-    <!-- Font Awesome css-->
+    <body class="undefined">
+     
+ 
+        <div id="navigation" class="navbar" style="background:none">
+              <h1>Rkraftcomua </h1>
 
+              <% if I18n.locale == :en %>
+              <%= button_to url_for(locale: :ru) do %><class="btn btn-outline-secondary mr-1">RU<i class="fa fa-users"></i></class="btn>
+             <% end %> 
+             <% else %>
+            <%= button_to url_for(locale: :en) do %><class="btn btn-outline-secondary mr-1">EN</span><i class="fa fa-users"></i></class="btn>
+             <% end %> 
+             <% end %>
+          </div>
 
-    <link rel="shortcut icon" href="favicon.png">
-  </head>
-  <body class="undefined">
+       
+
+      
      <style>
   .carousel-inner > .carousel-item > img,
   .carousel-inner > .carousel-item > a > img {
