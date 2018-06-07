@@ -1,3 +1,4 @@
-<h1>Main catalog</h1>
-<p>General products list</p>
+<% provide(:title, "Catalog") %>
+<h1><%= t('.ctitle') %></h1>
+<p><%= t('.csubtitle') %></p>
 <%= render partial: 'products/index' %>
