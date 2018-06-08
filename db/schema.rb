@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180521180428) do
+ActiveRecord::Schema.define(version: 20180608210723) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -68,6 +68,18 @@ ActiveRecord::Schema.define(version: 20180521180428) do
     t.string "pay_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "product_translations", force: :cascade do |t|
+    t.integer "product_id", null: false
+    t.string "locale", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "title"
+    t.text "description"
+    t.decimal "price"
+    t.index ["locale"], name: "index_product_translations_on_locale"
+    t.index ["product_id"], name: "index_product_translations_on_product_id"
   end
 
   create_table "products", force: :cascade do |t|

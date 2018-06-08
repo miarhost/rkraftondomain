@@ -1,4 +1,9 @@
 <% provide(:title, "Catalog") %>
 <h1><%= t('.ctitle') %></h1>
 <p><%= t('.csubtitle') %></p>
+<% Globalize.with_locale(:en) do %>
 <%= render partial: 'products/index' %>
+<% end %>
+<% Globalize.with_locale(:ru) do %>
+<%= render partial: 'products/index_ru' %>
+<% end %>

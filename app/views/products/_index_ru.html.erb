@@ -1,0 +1,36 @@
+<div class="center jumbotron">
+<p id="notice"><%= notice %></p>
+
+<h1><strong>Products</strong></h1>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <thead style="background color: #e0f8f8">
+
+<% @products.each do |product| %>
+  <tr class="<%= cycle('list_line_odd', 'list_line_even')%>">
+   <td> 
+    <%= image_tag(product.image_url, class: 'list_image') %>
+  </td>
+
+   <td class="list_description">
+     <dl>
+       <dt><%= product.title %></dt>
+       <dd><%= truncate(strip_tags(product.description), length:80) %></dd>
+     </dl>
+    </td>
+
+    <td class="list actions">
+      <%= link_to 'Show Product', product %><br/>
+      <%= link_to 'Edit Product', edit_product_path(product) %><br/>
+      <%= link_to 'Delete Product', product, method: :delete, data: { confirm: 'Are you sure?'} %>
+    </td>
+    <td class= "price_line">
+      <span class="price"><%= number_to_currency(product.price) %></span>
+    <%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+  </td>
+  </tr>
+  <% end %>
+</table>
+
+
+<%= link_to 'New Product', new_product_path %>
