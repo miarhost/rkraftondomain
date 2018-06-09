@@ -1,6 +1,5 @@
-<div class="center jumbotron">
+
 <%= provide(:title, "Gallery") %>
-<p>Examples of products made for customers</p>
 
 <!--pagination stuff 
 <div class="digg_pagination">
@@ -11,18 +10,18 @@
   </div>  -->
                 <!-- /.image-->
        <div class="box text-center">
-            <h3 class="text-uppercase">View the Gallery</h3>
-            <h4 class="text-muted"><span class="accent">Find your solution</span> for design</h4>
+            <h3 class="text-uppercase"><%= t('.view') %></h3>
+            <h4 class="text-muted"><span class="accent"><%= t('.find') %></span><%= t('.design') %></h4><p><%= t('.gtitle') %></p>
           </div>
           <div class="row products">
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= gallery_path %>"><img src="<%= asset_path 'title.png' %>" alt="Rkraft" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#" class="btn btn-outline-white-secondary btn-sm">View</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#" class="btn btn-outline-white-secondary btn-sm"><%= t('.zview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="#">Plastic packaging: lunchboxes</a></h3>
+                  <h3><a href="#"><%= t('main.home.popup') %></a></h3>
                   <p class="price">$ 0.44</p>
                 </div>
                 <!-- /.text-->
@@ -32,12 +31,12 @@
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'composed_stands.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">View</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('.zview') %></a></div>
                 </div>
 
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html">Info/products stands</a></h3>
+                  <h3><a href="detail.html"><%= t('.infostands') %></a></h3>
                                  </div>
               
               </div>
@@ -46,11 +45,11 @@
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'shelftalker.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">View</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('.zview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html">Shelftalker</a></h3>
+                  <h3><a href="detail.html"><%= t('main.home.shelf') %></a></h3>
                  
                 </div>
                 <!-- /.text-->
@@ -60,7 +59,7 @@
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'blp.png' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">

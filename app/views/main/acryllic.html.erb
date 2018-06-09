@@ -1,7 +1,9 @@
+<div class="center jumbotron">
+<% provide(:title, "Acryllic Stands") %>
 
 <section>
       <div class="container">
-        <h1> Acryllic stands</h1>
+        <h1><%= t('.atitle') %></h1>
         <p class="lead"> </p>
         <p></p>
       </div>
@@ -12,14 +14,14 @@
           <div class="col-sm-4">
             <div class="post">
               <div class="image"><img src="<%= asset_path 'pvc.jpg' %>" class="img-responsive"></div>
-              <p>Acryllic displays of 2-3 shelves</p>
+              <p><%= t('.shelves') %></p>
              
             </div>
           </div>
           <div class="col-sm-4">
             <div class="post">
               <div class="image"><img src="<%= asset_path 'cosmetics.jpg' %>" alt="" class="img-responsive"></a></div>
-              <p>Acryllic stand for cosmetics</p>
+              <p><%= t('.cosmetics') %></p>
               
              
             </div>
@@ -27,7 +29,7 @@
           <div class="col-sm-4">
             <div class="post">
               <div class="image"><img src="<%= asset_path 'booklet.jpg' %>" alt="" class="img-responsive"></a></div>
-              <p>Stands for booklets</p>
+              <p><%= t('.booklets') %></p>
               
               
             </div>
