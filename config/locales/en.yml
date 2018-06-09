@@ -130,6 +130,16 @@ en:
       contact: "Phone, email, messengers"
       enqmail: "You can send your quotes on email or any messenger"
       inqform: "Inquiry Form"
+      place: "Place your inquiry here"
+      first_name: "First name"
+      last_name: "Last name"
+      subject: "Subject"
+      message: "Message"
+      details: Write inquiring details here"
+      mailin: "Type your email address"
+      submit: "Submit"
+      about: "About Us "
+      about_p: "We develop and produce plastic packaging of any shape and complexity, for a wide range of goods, containers, lunch boxes, sushi boxes.  Our production is characterized by an individual approach, we can select the optimal form of packaging material, attractive and optimized design, with your company logo.  "
 
   users:
     registrations:
