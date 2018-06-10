@@ -154,6 +154,10 @@ en:
       design: " for design"
       zview: "View"
       infostands: "Info/products stands"
+      suchibox: "Suchi-box"
+      lightbox: "Lightbox"
+      moldtray: "Molded tray"
+      metalrack: "Metal rack"
 
   users:
     registrations:

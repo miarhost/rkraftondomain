@@ -156,6 +156,10 @@ ru:
       design: " дизайнерское решение"
       zview: "Подробнее"
       infostands: "Инфо/продуктовые стойки"
+      suchibox: "Суши-бокс"
+      lightbox: "Лайтбокс"
+      moldtray: "Формованный трей"
+      metalrack: "Металлический стеллаж"
 
   users:
     registrations:
