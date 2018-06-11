@@ -11,9 +11,7 @@ class Product < ApplicationRecord
 
 	before_destroy :ensure_not_referenced_by_any_line_item 
     
-    #translates :title, :description, :price, touch: true 
-
-	private
+   	private
 
 	def ensure_not_referenced_by_any_line_item
 	unless line_items.empty?
