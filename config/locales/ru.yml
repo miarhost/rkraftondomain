@@ -9,8 +9,8 @@ ru:
       catalog: "Каталог"
       services: "Услуги"
       contacts: "Контакты"
-      sign_up: "Войти"
-      log_in: "Зарегистрироваться"
+      sign_up: "Зарегистрироваться"
+      log_in: "Войти"
       clamshells: "Блистеры"
       acryllic: "Акриловые дисплеи"
       metal: "Металлические дисплеи"
@@ -199,3 +199,20 @@ ru:
         cancel: "Удалить мой аккаунт"
         unhappy: "Точно?"
         back: "Назад"
+      new:
+        signup: "Регистрация"
+        name: "Имя"
+        email: "Электронный адрес"
+        password: "Пароль"
+        passconf: "Подтверждение пароля"
+        char: " символов минимум"
+    sessions:
+      new:
+        login: "Вход"
+        remember_me: "Запомнить меня"
+    shared:
+      links:
+        forgot: "Забыли пароль?"
+    
+ 
+ 

@@ -197,3 +197,19 @@ en:
         cancel: "Cancel my account"
         unhappy: "Unhappy? "
         back: "Back"
+      new:
+        signup: "Sign up"
+        name: "User's name"
+        email: "Email"
+        password: "Password"
+        passconf: "Password Confirmation"
+        char: " characters minimum"
+    sessions:
+      new:
+        login: "Log in"
+        remember_me: "Remember me"
+    shared:
+      links:
+        forgot: "Forgot your password?"
+
+
