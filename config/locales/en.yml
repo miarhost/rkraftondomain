@@ -33,6 +33,10 @@ en:
     index:
       title: "Products"
       add_html: "Add to Cart"
+      show: "Show Product"
+      delete: "Delete Product"
+      edit: "Edit Product"
+      new: "New Product"
 
   carts:
     cart:
@@ -158,6 +162,24 @@ en:
       lightbox: "Lightbox"
       moldtray: "Molded tray"
       metalrack: "Metal rack"
+
+    racks:
+      rtitle: "Metal product stands of welded steel pipes, wire and mesh"
+      prod: "Metal production"
+      custom: "Custom "
+      and: "Metal Racks "
+      metal: "and "
+      wired: "Wired Stands"
+      description: "We have rich experience in modeling and production of custom metal displays, racks and stands: Displays, racks, stands made of steel pipes and with polymer coating  of RAL color cast ."
+      goproducts: "Go to products catalog"
+      mpr: "Metal products: racks"
+      shelves: "Shelves"
+      wirestand: "Wire stand"
+      shheader: "Wire shelf header"
+      rack: "Rack"
+      hook: "Wire hook header"
+      mesh: "Mesh metal product stand"
+      mdispenser: "Metal dispenser"
 
   users:
     registrations:

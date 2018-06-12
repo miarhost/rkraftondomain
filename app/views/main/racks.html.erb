@@ -6,9 +6,9 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="icon icon-lg"><i class="fa fa-file-code-o"></i></div>
-                <h1>Do you want to see more?</h1>
-                <p class="lead">Metal product stands of welded steel pipes, wire and mesh</p>
-                <p class="text-center"><a href="<%= gallery_path %>" class="btn btn-outline-white-primary">See latest gallery </a></p>
+                <h1><%= t('main.home.seemore') %></h1>
+                <p class="lead"><%= t('.rtitle') %></p>
+                <p class="text-center"><a href="<%= gallery_path %>" class="btn btn-outline-white-primary"><%= t('main.home.2_gallery_s') %></a></p>
               </div>
             </div>
           </div>
@@ -18,11 +18,11 @@
 
 <div class="col-sm-6">
               <div class="post">
-                <h4><a href="#">Metal production</a></h4>
-                <p class="author-category">Custom <a href="#">Metal Racks</a> and <a href="">Wired Stands</a></p>
+                <h4><a href="#"><%= t('.prod') %></a></h4>
+                <p class="author-category"><%= t('.custom') %><a href="#"><%= t('.and') %></a><%= t('.metal') %><a href=""><%= t('.wired') %></a></p>
                 <hr>
-                <p class="intro">We have rich experience in modeling and production of custom metal displays, racks and stands: Displays, racks, stands made of steel pipes and with polymer coating  of RAL color cast .</p>
-                <p class="read-more"><a href="<%= products_path %>" class="btn btn-outline-primary">Go to products catalog</a></p>
+                <p class="intro"><%= t('.description') %></p>
+                <p class="read-more"><a href="<%= products_path %>" class="btn btn-outline-primary"><%= t('.goproducts') %></a></p>
               </div>
             </div>
           </div>
@@ -31,11 +31,11 @@
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= gallery_path %>"><img src="<%= asset_path 'metal_rack.jpg' %>" alt="Rkraft" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="#">Metal products: racks</a></h3>
+                  <h3><a href="#"><%= t('.mpr') %></a></h3>
                   <p class="price">$ 71</p>
                 </div>
                 <!-- /.text-->
@@ -45,12 +45,12 @@
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'rack_shelves.png' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
 
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html">Shelves</a></h3>
+                  <h3><a href="detail.html"><%= t('.shelves') %></a></h3>
                   <p class="price">
                     <del>$17</del> $16.68
                   </p>
@@ -72,11 +72,11 @@
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'wirestand.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html">Wire stand</a></h3>
+                  <h3><a href="detail.html"><%= t('.wirestand') %></a></h3>
                   <p class="price">$2.74</p>
                 </div>
                 <!-- /.text-->
@@ -86,11 +86,11 @@
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'rack_wire.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html">Wire shelf header </a></h3>
+                  <h3><a href="detail.html"><%= t('.shheader') %></a></h3>
                   <p class="price">$1.9</p>
                 </div>
                 <!-- /.text-->
@@ -100,11 +100,11 @@
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'rack.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html">Rack</a></h3>
+                  <h3><a href="detail.html"><%= t('.rack') %></a></h3>
                   <p class="price">
                     <del>$95</del> $92
                   </p>
@@ -126,11 +126,11 @@
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'hook.png' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html">Wire hook header</a></h3>
+                  <h3><a href="detail.html"><%= t('.hook') %></a></h3>
                   <p class="price">$0.98</p>
                 </div>
                 <!-- /.text-->
@@ -145,11 +145,11 @@
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'racks_stand.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="<%= products_path %>">Mesh metal product stand</a></h3>
+                  <h3><a href="<%= products_path %>"><%= t('.mesh') %></a></h3>
                   <p class="price">$23.53</p>
                 </div>
                 <!-- /.text-->
@@ -164,11 +164,11 @@
             <div class="col-md-3 col-sm-4">
               <div class="product">
                 <div class="image"><a href="<%= products_path %>"><img src="<%= asset_path 'dispenser.jpg' %>" alt="" class="img-fluid image1"></a>
-                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm">Quick view</a></div>
+                  <div class="quick-view-button"><a href="#" data-toggle="modal" data-target="#product-quick-view-modal" class="btn btn-outline-white-secondary btn-sm"><%= t('main.home.qview') %></a></div>
                 </div>
                 <!-- /.image-->
                 <div class="text">
-                  <h3><a href="detail.html">Metal dispenser</a></h3>
+                  <h3><a href="detail.html"><%= t('.mdispenser') %></a></h3>
                   <p class="price">$6.47</p>
                 </div>
                 <!-- /.text-->
@@ -231,29 +231,7 @@
   </div>
 
 
-<div class=container>
-<div class="col-lg-3 col-md-6">
-              <h4>Where to find us</h4>
-              <p><strong>Maps</strong><br>Ukraine<br>   Kyiv Region <br>    Find on map<br>   Kyiv <br><strong>Contacts </strong></p><a href="<%= contacts_path %>">Go to contact page</a>
-              <hr class="d-block d-md-none">
-            </div>
-            <!-- /.col-lg-3-->
-            
-        
-            
-                            <!-- /input-group-->
-             </form>
-              <hr>
-              <h4>Stay in touch</h4>
-              <p class="social"><a href="#"><i class="fa fa-facebook-square"></i></a><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-google-plus"></i></a><a href="#"><i class="fa fa-envelope"></i></a></p>
-            </div>
-            <!-- /.col-lg-3-->
-          </div>
-          <!-- /.row-->
-        </div>
-        <!-- /.container-->
-      </div>
- <!-- *** FOOTER END ***-->
+
 
 </div>
 

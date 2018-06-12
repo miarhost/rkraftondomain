@@ -39,9 +39,9 @@ remote: true %>
 </td>
 
     <td class="list actions">
-      <%= link_to 'Show Product', product %><br/>
-      <%= link_to 'Edit Product', edit_product_path(product) %><br/>
-      <%= link_to 'Delete Product', product, method: :delete, data: { confirm: 'Are you sure?'} %>
+      <%= link_to t('.show'), product %><br/>
+      <%= link_to t('.edit'), edit_product_path(product) %><br/>
+      <%= link_to t('.delete'), product, method: :delete, data: { confirm: 'Are you sure?'} %>
     </td>
  
   </tr>
@@ -49,6 +49,6 @@ remote: true %>
 </table>
 
 
-<%= link_to 'New Product', new_product_path %>
+<%= link_to t('.new'), new_product_path %>
 
 
