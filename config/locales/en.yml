@@ -56,7 +56,8 @@ en:
 
   orders:
     new:
-      legend: "Please enter your detais"
+      title: "New Order"
+      legend: "Please enter your details"
     form:
       name: "Name"
       address: "Address"
