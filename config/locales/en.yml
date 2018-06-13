@@ -43,6 +43,7 @@ en:
       title: "Your Cart"
       empty: "Empty Cart"
       checkout: "Checkout"
+      total: "Total"
 
   number:
     currency: 

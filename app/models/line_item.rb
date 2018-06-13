@@ -4,7 +4,11 @@ class LineItem < ApplicationRecord
   belongs_to :cart
 
   def total_price
-  	product.price * quantity
+  	if I18n.locale == :en
+  	product.price * quantity 
+    else
+    product.price_ru * quantity
+    end
   end
 
   #def total_quantity

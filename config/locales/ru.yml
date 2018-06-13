@@ -41,8 +41,9 @@ ru:
   carts:
     cart:
       title: "Ваша корзина"
-      empty: "Корзина пуста"
+      empty: "Удалить все из корзины"
       checkout: "Подтвердить"
+      total: "Сумма"
     
   number:
     currency:
