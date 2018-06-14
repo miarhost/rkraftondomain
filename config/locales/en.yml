@@ -58,6 +58,7 @@ en:
     new:
       title: "New Order"
       legend: "Please enter your details"
+      checkout: "Checkout"
     form:
       name: "Name"
       address: "Address"
