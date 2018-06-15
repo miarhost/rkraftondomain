@@ -1,7 +1,6 @@
 
 Dear <%= @order.name %>
-Thank you for your recent order at Rkraftcomua.
-You ordered the following items:
+<%= t('.thank') %>
 <%= render @order.line_items -%>
 
-We will send you a separate email when your order ships.
+<%= t('.separate') %>
