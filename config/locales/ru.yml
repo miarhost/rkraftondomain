@@ -76,7 +76,17 @@ ru:
         name: "Имя"  
         email: "Емейл"
         pay_type: "Способ оплаты"
-
+    errors:
+      messages:
+        inclusion: "Не существует; нет в списке"
+        blank: "Не может быть пустым"
+ 
+  errors:
+    template:
+      body: "При сохранении возникли следующие проблемы:"
+      header:
+        one: "Сохранение %{model}а невозможно из-за 1 ошибки"
+        other: "Сохранение %{model}а невозможно из-за %{count} ошибок"
   main:
     home:
       carousel1: "Ланч-боксы"
