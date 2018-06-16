@@ -6,6 +6,7 @@ en:
     application:
       title: "Rkraftcomua"
       home: "Home"
+      menu: "Menu"
       catalog: "Catalog"
       services: "Services"
       contacts: "Contacts"
@@ -28,6 +29,9 @@ en:
       where: "Where to find us"
       gocontacts: "See contacts, map, leave an inquiry"
       gallery: "Gallery"
+      shop: "Shop & Cart"
+      prods: "Products"
+      userarea: "User's Profile"
   
   products:
     index:

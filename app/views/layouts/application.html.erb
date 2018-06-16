@@ -54,7 +54,7 @@
             <div class="nav-item active dropdown normal-dropdown"><a id="homeDropdown" href="<%= home_path %>" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Home</a>
               <div aria-labelledby="homeDropdown" class="dropdown-menu"><a href="<%= home_path %>" class="dropdown-item">Home - default</a><a href="<%= catalog_path %>" class="dropdown-item">Home - intro image</a><a img src="<%= asset_path 'title.png' %>" class="dropdown-item">Home - fullscreen slider <span class="badge badge-success">New</span></a></div>
             </div>
-            <div class="nav-item dropdown yamm-fw"><a href="<%= 'clamshells' %>" data-toggle="dropdown" class="nav-link dropdown-toggle"><%= t('.clamshells') %><b class="caret"></b></a>
+            <div class="nav-item dropdown yamm-fw"><a href="<%= 'clamshells' %>" data-toggle="dropdown" class="nav-link dropdown-toggle"><%= t('.menu') %><b class="caret"></b></a>
               <div class="dropdown-menu">
                 <div class="yamm-content">
                   <div class="row">
@@ -94,7 +94,7 @@
                 </div>
               </div>
             </div>
-            <div class="nav-item dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle"><%= t('.metal') %><b class="caret"></b></a>
+            <div class="nav-item dropdown yamm-fw"><a href="<%= catalog_path %>" data-toggle="dropdown" class="nav-link dropdown-toggle"><%= t('.prods') %><b class="caret"></b></a>
               <div class="dropdown-menu">
                 <div class="yamm-content">
                   <div class="row">
@@ -134,7 +134,7 @@
                 </div>
               </div>
             </div>
-            <div class="nav-item dropdown yamm-fw"><a href="<%= gallery_path %>" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="nav-link dropdown-toggle"><%= t('.gallery') %><b class="caret"></b></a>
+            <div class="nav-item dropdown yamm-fw"><a href="<%= gallery_path %>" data-toggle="dropdown" data-hover="dropdown" class="nav-link dropdown-toggle"><%= t('.shop') %><b class="caret"></b></a>
               <div class="dropdown-menu">
                 <div class="yamm-content">
                   <div class="row">
@@ -157,11 +157,8 @@
                     <div class="col-sm-6 col-lg-3" id="cart">
                       <h5>Order process</h5>
                       <ul>
-                        <li><a href="#">Shopping cart</a></li>
-                        <li><a href="#">Checkout - step 1</a></li>
-                        <li><a href="#">Checkout - step 2</a></li>
-                        <li><a href="#">Checkout - step 3</a></li>
-                        <li><a href="#">Checkout - step 4</a></li>
+                        <li><a href="<%= products_path %>">Shopping cart</a></li>
+                        <li><a href="<%= new_order_path %>">Cart Checkout</a></li>
                       </ul>
                     </div>
                     <div class="col-sm-6 col-lg-3">
@@ -180,11 +177,38 @@
                   </div>
                 </div>
                 <!-- /.yamm-content-->
+              
               </div>
             </div>
+
             <div class="nav-item"><a href="<%= contacts_path %>" class="nav-link"><%= t('.contacts') %></a></div>
           </div>
-                   
+        
+         <div class="nav-item dropdown yamm-fw"><a href="<%= gallery_path %>" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="nav-link dropdown-toggle"><%= t('.userarea') %><b class="caret"></b></a>
+              <div class="dropdown-menu">
+                <div class="yamm-content">
+                  <div class="row">
+                    <div class="col-sm-6 col-lg-3">
+
+        <% if !user_signed_in? %>
+                              <h5>Registrations</h5>
+                      <ul>
+        <li><%= link_to t('.sign_up'), new_user_registration_path %></li>
+        <li><%= link_to t('.log_in'), new_user_session_path %></li>
+                      </ul>
+                    </div>
+                      <div class="col-sm-6 col-lg-3" id="cart">
+                      <% else %>
+                        <h5>Edit Profile</h5>
+                      <ul>  
+                      
+                      <li><%= link_to 'Edit Profile', edit_user_registration_path %></li>
+        <li><%= link_to 'Logout', destroy_user_session_path, method: :delete, :class => 'navbar-link' %></li> 
+                      </ul>  
+                      <% end %>                  
+                    </div>
+                  </div>
+                </div>
         <!-- /.nav-collapse-->
       </div>
     </nav>
@@ -193,26 +217,8 @@
   </head>
 
   <body>
-     <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-      <li><%= link_to t('.home'), home_path %></li>
-      <li><%= link_to t('.catalog'), catalog_path %> </li>
-      <li><%= link_to t('.services'), services_path %></li>
-      <li><%= link_to t('.contacts'), contacts_path %></li>
      
-
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <% if !user_signed_in? %>
-        <li><%= link_to t('.sign_up'), new_user_registration_path %></li>
-        <li><%= link_to t('.log_in'), new_user_session_path %></li>
-        <% else %>
-        <li><%= link_to 'Edit Profile', edit_user_registration_path %></li>
-        <li><%= link_to 'Logout', destroy_user_session_path, method: :delete, :class => 'navbar-link' %></li> 
-        <% end %>
-      </ul>
-    </nav>
-    </div>
+  
   <% if @cart %>
   <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
   <%= render @cart %>
