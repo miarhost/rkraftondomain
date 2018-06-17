@@ -1,0 +1,292 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/rghost/workspace/rkraftcomua/lib/email_processor.rb",
+		"/home/rghost/workspace/highpoly/Gemfile",
+		"/home/rghost/workspace/rkraftcomua/test/controllers/admins_controller_test.rb",
+		"/home/rghost/workspace/highpoly/config/environments/production.rb",
+		"/home/rghost/workspace/rkraftcomua/config/locales/en.yml",
+		"/home/rghost/workspace/rkraftcomua/app/controllers/inquiries_controller.rb",
+		"/home/rghost/workspace/rkraftcomua/app/views/inquiry_mailer/inquire.html.erb",
+		"/home/rghost/workspace/rkraftcomua/app/mailers/inquiry_mailer.rb",
+		"/home/rghost/workspace/rkraftcomua/test/mailers/order_mailer_test.rb",
+		"/home/rghost/workspace/rkraftcomua/app/controllers/subscriptions_controller.rb",
+		"/home/rghost/workspace/rkraftcomua/test/models/subscription_test.rb",
+		"/home/rghost/workspace/rkraftcomua/app/models/subscription.rb",
+		"/home/rghost/workspace/rkraftcomua/app/mailers/subscription_mailer.rb",
+		"/home/rghost/workspace/rkraftcomua/test/controllers/line_items_controller_test.rb",
+		"/home/rghost/workspace/Valera/highpoly/test/fixtures/subscriptions.yml",
+		"/home/rghost/workspace/Valera/highpoly/test/mailers/subscription_mailer_test.rb",
+		"/home/rghost/workspace/Valera/highpoly/test/models/user_test.rb",
+		"/home/rghost/workspace/rkraftcomua/test/controllers/orders_controller_test.rb",
+		"/home/rghost/workspace/rkraftcomua/app/models/inquiry.rb",
+		"/home/rghost/workspace/rkraftcomua/app/assets/stylesheets/main.scss.erb",
+		"/home/rghost/workspace/rkraftcomua/app/views/main/mold.html.erb",
+		"/home/rghost/workspace/rkraftcomua/app/views/main/racks.html.erb",
+		"/home/rghost/workspace/rkraftcomua/app/views/carts/index.html.erb",
+		"/home/rghost/workspace/rkraftcomua/bin/rails",
+		"/home/rghost/workspace/rkraftcomua/app/controllers/application_controller.rb",
+		"/home/rghost/workspace/rkraftcomua/config/locales/products/ru.yml",
+		"/home/rghost/workspace/rkraftcomua/config/locales/products/en.yml",
+		"/home/rghost/workspace/rkraftcomua/app/views/layouts/application.html.erb",
+		"/home/rghost/workspace/staticnusers/test/models/user_test.rb",
+		"/home/rghost/workspace/rkraftcomua/app/mailers/order_mailer.rb",
+		"/home/rghost/workspace/rkraftcomua/test/models/user_test.rb",
+		"/home/rghost/workspace/rkraftcomua/app/views/main/services.html.erb",
+		"/home/rghost/workspace/rkraftcomua/test/fixtures/users.yml",
+		"/home/rghost/Downloads/multi/contact.html",
+		"/home/rghost/workspace/rkraftcomua/db/migrate/20180510130956_add_fields_to_inquiry.rb",
+		"/home/rghost/workspace/rkraftcomua/db/migrate/20180509184918_create_inquiries.rb",
+		"/home/rghost/workspace/rkraftcomua/db/migrate/20180418101627_create_orders.rb",
+		"/home/rghost/workspace/rkraftcomua/app/views/order_mailer/shipped.html.erb",
+		"/home/rghost/workspace/rkraftcomua/app/models/product.rb",
+		"/home/rghost/workspace/rkraftcomua/test/controllers/sessions_controller_test.rb",
+		"/home/rghost/workspace/rkraftcomua/app/views/main/catalog.html.erb",
+		"/home/rghost/workspace/rkraftcomua/config/environments/production.rb",
+		"/home/rghost/workspace/rkraftcomua/Gemfile",
+		"/home/rghost/workspace/rkraftcomua/config/environments/development.rb",
+		"/home/rghost/workspace/rkraftcomua/lib/assets/stylesheets/bootstrap-grid.min.css",
+		"/home/rghost/workspace/rkraftcomua/app/controllers/admins_controller.rb",
+		"/home/rghost/workspace/rkraftcomua/app/views/products/index.html.erb",
+		"/home/rghost/workspace/rkraftcomua/app/controllers/products_controller.rb",
+		"/home/rghost/workspace/Valera/highpoly/.env",
+		"/home/rghost/workspace/Valera/highpoly/config/database.yml",
+		"/home/rghost/workspace/rkraftcomua/config/locales/ru.yml",
+		"/home/rghost/workspace/rkraftcomua/test/integration/user_stories_test.rb",
+		"/home/rghost/workspace/rkraftcomua/app/views/products/edit.html.erb",
+		"/home/rghost/workspace/rkraftcomua/app/views/main/acryllic.html.erb",
+		"/home/rghost/workspace/rkraftcomua/test/controllers/carts_controller_test.rb",
+		"/home/rghost/workspace/Valera/highpoly/test/controllers/topicthreads_controller_test.rb",
+		"/home/rghost/workspace/rkraftcomua/app/controllers/orders_controller.rb",
+		"/home/rghost/workspace/rkraftcomua/app/controllers/main_controller.rb",
+		"/home/rghost/workspace/rkraftcomua/app/views/main/clamshells.html.erb",
+		"/home/rghost/workspace/rkraftcomua/app/assets/stylesheets/clamshells.scss.erb",
+		"/home/rghost/workspace/rkraftcomua/app/assets/stylesheets/custom.scss",
+		"/home/rghost/workspace/rkraftcomua/app/views/main/gallery.html.erb",
+		"/home/rghost/workspace/rkraftcomua/app/assets/stylesheets/orders.scss",
+		"/home/rghost/workspace/Valera/highpoly/app/views/topics/_form.html.erb",
+		"/home/rghost/workspace/Valera/highpoly/test/controllers/branches_controller_test.rb",
+		"/home/rghost/workspace/Valera/highpoly/test/controllers/messages_controller_test.rb",
+		"/home/rghost/workspace/rkraftcomua/app/models/line_item.rb",
+		"/home/rghost/workspace/rkraftcomua/test/fixtures/line_items.yml",
+		"/home/rghost/workspace/rkraftcomua/test/fixtures/orders.yml",
+		"/home/rghost/workspace/rkraftcomua/app/views/orders/new.html.erb",
+		"/home/rghost/workspace/rkraftcomua/config/routes.rb",
+		"/home/rghost/Downloads/minimal/index2.html",
+		"/home/rghost/workspace/rkraftcomua/config/application.yml",
+		"/home/rghost/workspace/rkraftcomua/.gitignore",
+		"/home/rghost/workspace/rkraftcomua/config/initializers/i18n.rb",
+		"/home/rghost/workspace/rkraftcomua/config/initializers/aws.rb",
+		"/home/rghost/workspace/toy_app/test/models/user_test.rb",
+		"/home/rghost/Downloads/minimal/index.html",
+		"/home/rghost/workspace/rkraftcomua/app/assets/stylesheets/application.scss.erb",
+		"/home/rghost/workspace/toy_app/test/controllers/users_controller_test.rb",
+		"/home/rghost/workspace/rkraftcomua/README.md",
+		"/home/rghost/workspace/rkraftcomua/app/views/users/sessions/new.html.erb",
+		"/home/rghost/workspace/rkraftcomua/config/initializers/carrierwave.rb",
+		"/home/rghost/workspace/Valera/highpoly/Gemfile",
+		"/home/rghost/workspace/rkraftcomua/config/initializers/fog.rb",
+		"/home/rghost/workspace/Valera/highpoly/config/initializers/carrierwave.rb",
+		"/home/rghost/workspace/rkraftcomua/db/migrate/20180502152011_add_devise_to_admins.rb",
+		"/home/rghost/workspace/rkraftcomua/db/migrate/20180426123102_devise_create_admins.rb",
+		"/home/rghost/workspace/rkraftcomua/app/uploaders/image_uploader.rb",
+		"/home/rghost/workspace/Valera/highpoly/config/initializers/fog.rb",
+		"/home/rghost/workspace/highpoly/config/application.yml",
+		"/home/rghost/workspace/highpoly/config/secrets.yml",
+		"/home/rghost/workspace/Valera/highpoly/config/application.yml",
+		"/home/rghost/workspace/rkraftcomua/db/schema.rb",
+		"/home/rghost/workspace/rkraftcomua/app/controllers/sessions_controller.rb",
+		"/home/rghost/workspace/rkraftcomua/app/views/orders/_form.html.erb",
+		"/home/rghost/workspace/rkraftcomua/config/application.rb",
+		"/home/rghost/workspace/rkraftcomua/app/models/user.rb",
+		"/home/rghost/workspace/Valera/highpoly/app/uploaders/image_uploader.rb",
+		"/home/rghost/workspace/Valera/highpoly/.gitignore",
+		"/home/rghost/workspace/highpoly/app/controllers/messages_controller.rb",
+		"/home/rghost/workspace/Valera/highpoly/app/controllers/messages_controller.rb",
+		"/home/rghost/workspace/rkraftcomua/app/views/carts/_cart.html.erb",
+		"/home/rghost/workspace/rkraftcomua/config/cable.yml",
+		"/home/rghost/workspace/rkraftcomua/app/views/line_items/create.js.erb",
+		"/home/rghost/workspace/rkraftcomua/app/views/main/home.html.erb",
+		"/home/rghost/workspace/Valera/highpoly/app/views/layouts/application.html.erb",
+		"/home/rghost/workspace/rkraftcomua/app/views/admins/index.html.erb",
+		"/home/rghost/ruby/sessions_new.html.erb",
+		"/home/rghost/workspace/rkraftcomua/app/views/sessions/new.html.erb",
+		"/home/rghost/workspace/rakenotes/config/routes.rb",
+		"/home/rghost/workspace/rakenotes/app/assets/stylesheets/static_pages.scss",
+		"/home/rghost/workspace/rakenotes/app/views/static_pages/home.html.erb",
+		"/home/rghost/workspace/rakenotes/app/views/static_pages/suse.html.erb",
+		"/home/rghost/workspace/rakenotes/app/views/static_pages/heroku.html.erb",
+		"/home/rghost/workspace/rakenotes/app/views/static_pages/about.html.erb",
+		"/home/rghost/workspace/rakenotes/app/views/static_pages/deploy.html.erb",
+		"/home/rghost/workspace/Valera/highpoly/app/views/landing/blender.html.erb",
+		"/home/rghost/workspace/rkraftcomua/app/views/order_mailer/received.text.erb",
+		"/home/rghost/workspace/rkraftcomua/app/views/line_items/_line_item.text.erb",
+		"/home/rghost/workspace/rkraftcomua/app/views/subscription_mailer/subscribe.html.erb",
+		"/home/rghost/workspace/rkraftcomua/.env",
+		"/home/rghost/workspace/rkraftcomua/Procfile",
+		"/home/rghost/workspace/rkraftcomua/app/models/order.rb",
+		"/home/rghost/workspace/rkraftcomua/app/views/products/who_bought.atom.builder",
+		"/home/rghost/workspace/highpoly/README.md",
+		"/home/rghost/workspace/rakenotes/app/assets/stylesheets/application.css",
+		"/home/rghost/workspace/rakenotes/app/assets/javascripts/application.js"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "manifest.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 275.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
