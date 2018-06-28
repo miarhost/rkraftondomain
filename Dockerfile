@@ -1,6 +1,7 @@
 FROM ruby 2.3.4p301
 MAINTAINER miarhost <ritz.rkraft@gmail.com>
-RUN apt-get update && apt-get install -qq -y build-essential nodejs libpq-dev postgresql-client-9.4 --fix-missing --no-install-recommends
+RUN apt-get update && apt-get install -qq -y build-essential nodejs libpq-dev 
+FROM rkraftcomua/sql2
 ENV INSTALL_PATH .env
 mkdir -p var/www/rails/rkraftcomua
 WORKDIR var/www/rails/rkraftcomua
